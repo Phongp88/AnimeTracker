@@ -11,3 +11,91 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.animeCard {
+  display: grid;
+  grid-template-areas:
+      "title"
+      "img";
+  grid-template-columns: 1fr auto;
+  color: #fdfdfd;
+  -webkit-border-image: none;
+  border-image: none;
+  -webkit-border-image: initial;
+  border-image: initial;
+  border-radius: 3px;
+  text-decoration: none;
+  color:black;
+  border: black 1px solid;
+}
+.animeCard p{
+  background-color:black;
+  margin-bottom:0px;
+}
+.App {
+  display: grid;
+  max-width: 900px;
+  grid-gap: 2rem;
+  gap: 2rem 2rem;
+  margin: 0 auto;
+  position: relative;
+  min-height: 90vh;
+}
+.searchResultContainer{
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  margin-bottom: 1.5rem;
+  grid-gap: .5rem .5rem;
+  gap: .5rem .5rem;
+  margin: auto;
+  margin-top: 0px;
+}
+.animeTitle{
+  font-weight: 600;
+  font-size: 1rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  grid-area: title;
+  margin: 0 0 .5rem;
+  overflow: hidden;
+  color:white;
+}
+.animeImg{
+  grid-area: img;
+  height: auto;
+  width: 200px;
+}
+#root{
+  background-color: #ad0d0d;
+}
+.searchBar{
+  display: grid;
+  grid-template-columns: auto 50px;
+  height: 45px;
+  color:white;
+}
+.searchInput::placeholder{
+  color:white;
+}
+.searchGo{
+  background: rgba(255,255,255,0.05);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: white solid 1px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: rgba(255,255,255,0.8);
+  cursor: pointer;
+}
+.searchInput{
+  background: rgba(255,255,255,0.05);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: white solid 1px;
+  border-right: transparent;
+  width: 100%;
+  padding-left: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+}
